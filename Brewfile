@@ -4,41 +4,45 @@ brew "htop"
 brew "nmap"
 brew "prettyping"
 brew "python3"
-brew "r"
-brew "svn"
 brew "tldr"
 brew "tree"
 brew "wget"
+brew "mas"
+brew "bash-completion"
+brew "itermocil"
+
+
 cask "alfred"
-cask "authy"
 cask "adguard"
 cask "appcleaner"
-cask "bitwarden"
-cask "cheatsheet"
-cask "discord"
-cask "font-comic-neue"
-cask "font-fantasque-sans-mono"
-cask "font-fira-code"
-cask "font-hack"
-cask "font-heavy-data-nerd-font"
-cask "font-lato"
-cask "font-roboto"
 cask "font-ubuntu-mono-nerd-font"
 cask "google-chrome"
 cask "iina"
-cask "istat-menus"
+#cask "istat-menus"
 cask "iterm2"
-cask "rstudio"
-cask "spotify"
-cask "transmission"
-cask "transmit"
+#cask "transmit"
 cask "visual-studio-code"
-cask "whatsapp"
-mas "Amphetamine", id: 937984704
-mas "Affinity Designer", id: 824171161
-mas "ApolloOne", id: 1044484672
-mas "Magnet", id: 441258766
-mas "PopClip", id: 445189367
-mas "Save to Pocket", id: 1477385213
-mas "Spark", id: 1176895641
-mas "The Unarchiever", id: 425424353
+cask "rambox"
+cask "evernote"
+cask "postman"
+cask "docker"
+cask "vnc-viewer"
+cask "skype"
+cask "microsoft-edge"
+cask "sublime-text"
+cask "itsycal"
+cask "google-backup-and-sync"
+cask "windscribe"
+cask "keepassx"
+cask "tiles"
+cask "adobe-acrobat-reader"
+
+#mas "Amphetamine", id: 937984704
+#mas "Affinity Designer", id: 824171161
+#mas "ApolloOne", id: 1044484672
+#mas "Magnet", id: 441258766
+#mas "PopClip", id: 445189367
+#mas "Save to Pocket", id: 1477385213
+#mas "Spark", id: 1176895641
+#mas "The Unarchiever", id: 425424353
+

@@ -58,6 +58,9 @@ code --install-extension ms-python.python
 code --install-extension teabyii.ayu
 code --install-extension Tyriar.sort-lines
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension ms-toolsai.jupyter
+
 
 # Update Visual Studio Code settings [2/2]
 printf "⚙️ Update Visual Studio Code settings...\n"
@@ -73,7 +76,7 @@ cp $CONFIG/.gitconfig ~/.gitconfig
 
 # Configure macOS Finder
 printf "⚙️ Configure Finder...\n"
-defaults write -g AppleShowAllExtensions -bool true
+#defaults write -g AppleShowAllExtensions -bool true
 defaults write com.apple.finder AppleShowAllFiles true
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 defaults write com.apple.finder ShowPathbar -bool true
@@ -93,6 +96,11 @@ defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
 defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
 defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
+defaults write NSGlobalDomain KeyRepeat -int 0
+
+# Require password as soon as screensaver or sleep mode starts
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Configure macOS Safari
 printf "⚙️ Configure Safari...\n"
@@ -116,6 +124,7 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
+
 # Configure macOS
 printf "⚙️ Various configuration...\n"
 defaults write com.apple.gamed Disabled -bool true
@@ -134,9 +143,14 @@ chmod 777 ${HOME}/Projects
 #  echo "Python3 is not installed! Install it from https://www.python.org"
 #fi
 
+printf "Open Apple App Store and sign-in, to install softwares from App Store "
+mas install 1295203466;
+mas install 540348655;
+
 # Cleanup
 printf "⚙️ Cleanup and final touches...\n"
 brew -v update && brew -v upgrade && brew cask upgrade && mas upgrade && brew -v cleanup --prune=2 && brew doctor
+
 
 # Exit script
 exit
