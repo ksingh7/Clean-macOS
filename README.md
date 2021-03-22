@@ -44,7 +44,8 @@ You need an active internet connection and one of the following macOS version al
 
 1. Fresh installation of macOS (version 10.15+)
 2. Signed to Apple Store with your iCloud account
-3. Cloned the repo with the command `git clone https://github.com/MarioCatuogno/Clean-macOS.git ~/Clean-macOS`
+3. `xcode-select --install`
+4. Cloned the repo with the command `git clone https://github.com/MarioCatuogno/Clean-macOS.git ~/Clean-macOS`
 
 ## Setup
 
