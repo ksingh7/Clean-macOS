@@ -21,6 +21,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install Brew
 printf "⚙️ Check Brew...\n"
+<<<<<<< HEAD
+=======
+
+>>>>>>> dd62e3ba86cff90be7308339e11111a97b128c21
 #if test ! $(which brew); then
   # Install Homebrew
     printf "📦 Installing XCode CL tools...\n"
