@@ -32,6 +32,8 @@ __Clean-macOS__ is a simple script that can be used after a clean installation o
 - [Contributing](#contributing)
 - [Useful links](#useful-links)
 - [Credits](#credits)
+- [OS Micro-Configurations](#os-micro-configurations)
+    - [For auto display setup](#for-auto-display-setup)
 
 ## Getting Started
 
@@ -43,7 +45,7 @@ You need an active internet connection and one of the following macOS version al
 ## Requirements
 
 1. Fresh installation of macOS (version 10.15+)
-2. Signed to Apple Store with your iCloud account
+2. Signed to Apple Store with your Apple account
 3. `xcode-select --install`
 4. Cloned the repo with the command `git clone https://github.com/ksingh7/Clean-macOS.git ; cd ~/Clean-macOS`
 5. Run the command `chmod -R 777 ~/Clean-macOS && ~/Clean-macOS/Clean-macOS.sh`
@@ -88,3 +90,50 @@ Click [__here__](https://github.com/MarioCatuogno/Clean-macOS/projects/8) to fin
   <a href="https://github.com/MarioCatuogno/Clean-macOS">
   <img width=600px src="https://raw.githubusercontent.com/MarioCatuogno/Clean-macOS/master/img/scrn_mydesktop.png" alt="Clean-macOS desktop"><br></a>
 </p>
+
+## OS Micro-Configurations
+
+To register the MBP with company managed software centre, download        managedsoftwaredcenter package
+Visit : red.ht/macsetup
+
+- Remove dock unnecessary items
+
+- Finder preferences
+  - new finder window - karasing
+  - sidebar
+  - Advanced
+
+System Preferences
+- General
+  - Default browser
+  - ask to keep changes
+
+- Deskto and screen saver
+  - change picture every 15 mins, random
+  - Drift > Start after 5 mins > show the clock > screen saver options > colour > spectrum
+
+- Dock and Menu Bar (check all boxes)
+  - Small > Magnification
+  - Minimise windows into app icon
+  - Automatically hide and show dock
+  - Bluetooth > show in menu bar
+  - Screen mirror > uncheck show in menu bar
+  - Sound > show in menu bar > always
+  - Battery > Show percentage
+  - Clock > Announce time
+  - Spotlight > uncheck show in menu
+
+- TouchID
+- Network > Bluetooth > setup bluetooth device > connect magic mouse
+- Keyboard > Delay until Repeat (full), keyboardd repeat
+- Trackpad (check everything) > Trackpad speed > high
+- Mouse > Check everything > tracking speed > high
+- Battery (check all) > turn off display > 3hrs
+- power adapter (check all) > turn display off > 3hrs
+- security and privacy > Require password 4 Hours
+
+#### For auto display setup
+
+``brew tap jakehilborn/jakehilborn && brew install displayplacer``
+- `displayplacer list`
+- create a script file if you want

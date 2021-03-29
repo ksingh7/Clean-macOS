@@ -10,6 +10,8 @@ brew "wget"
 brew "mas"
 brew "bash-completion"
 brew "TomAnthony/brews/itermocil"
+brew "displayplacer"
+brew "jakehilborn/jakehilborn"
 
 
 cask "alfred"
