@@ -12,7 +12,8 @@ brew "bash-completion"
 brew "TomAnthony/brews/itermocil"
 brew "displayplacer"
 brew "jakehilborn/jakehilborn"
-
+brew "awscli"
+brew "jq"
 
 cask "alfred"
 cask "adguard"
