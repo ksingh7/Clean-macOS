@@ -39,5 +39,6 @@ cask "tiles"
 cask "adobe-acrobat-reader"
 cask "notion"
 cask "firefox"
+cask "font-fira-code"
 
 
