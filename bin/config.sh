@@ -144,8 +144,8 @@ chmod 777 ${HOME}/Projects
 #fi
 
 printf "Open Apple App Store and sign-in, to install softwares from App Store "
-mas install 1295203466;
-mas install 540348655;
+mas install 1295203466; #Microsoft remote desktop
+mas install 540348655; #monosnap
 
 brew cask alfred link
 
