@@ -147,6 +147,9 @@ printf "Open Apple App Store and sign-in, to install softwares from App Store "
 mas install 1295203466;
 mas install 540348655;
 
+brew cask alfred link
+
+
 # Cleanup
 printf "⚙️ Cleanup and final touches...\n"
 brew -v update && brew -v upgrade && brew cask upgrade && mas upgrade && brew -v cleanup --prune=2 && brew doctor
