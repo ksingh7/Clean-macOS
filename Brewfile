@@ -36,5 +36,6 @@ cask "windscribe"
 cask "keepassx"
 cask "tiles"
 cask "adobe-acrobat-reader"
+cask "notion"
 
 
