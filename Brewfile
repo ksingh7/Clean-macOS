@@ -14,6 +14,7 @@ brew "displayplacer"
 brew "jakehilborn/jakehilborn"
 brew "awscli"
 brew "jq"
+brew "mongodb/brew/mongodb-community-shell"
 
 cask "alfred"
 cask "adguard"
